@@ -1,0 +1,11 @@
+<form class="pure-form pure-form-stacked" data-ng-controller="SignupCtrl as vm"
+      data-ng-submit="vm.signUp(vm.signup.username, vm.signup.password)" novalidate>
+    <fieldset class="text-center">
+    	<legend>Sign Up</legend>
+        <input type="email" placeholder="Email" style="display:inline-block;" data-ng-model="vm.signup.email" required><br/>
+        <input type="text" placeholder="Username" style="display:inline-block;" data-ng-model="vm.signup.username" required><br/>
+        <input type="password" placeholder="Password" style="display:inline-block;" data-ng-model="vm.signup.password" required><br/>
+		    <input type="password" placeholder="Confirm Password" style="display:inline-block;" data-ng-model="vm.signup.confirmPassword" required><br/>
+        <button type="submit" class="pure-button pure-button-primary">Sign Up</button>
+    </fieldset>
+</form>

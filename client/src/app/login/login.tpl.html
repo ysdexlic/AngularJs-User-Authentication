@@ -1,0 +1,14 @@
+<form name="loginForm" class="pure-form pure-form-stacked" data-ng-controller="LoginCtrl as vm"
+      data-ng-submit="vm.logIn(vm.login.username, vm.login.password)" novalidate>
+  <fieldset class="text-center">
+    <legend>Log In</legend>
+      <input type="text" placeholder="Username" style="display:inline-block;" data-ng-model="vm.login.username" required>
+      <br/>
+      <input type="password" placeholder="Password" style="display:inline-block;" data-ng-model="vm.login.password" required>
+      <br/>
+      <a href="">Forgotten your password?</a>
+      <br/>
+      <button type="submit" class="pure-button pure-button-primary">Log In</button>
+  </fieldset>
+  <a href data-ng-click="vm.logOut()">logout</a>
+</form>

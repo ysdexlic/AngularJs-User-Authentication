@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" data-ng-controller="MainCtrl">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sessions</title>
+  <meta name="description" content="Sessions - Creating recording solutions for musicians and composers through a global network of session musicians">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-ng-bind="title"></title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="keywords" content="Sessions, music, recording" />
+
+  <!-- build:css assets/css/main.css -->
+  <link rel="stylesheet" type="text/css" href="src/vendor/pure/pure.css" />
+  <link rel="stylesheet" type="text/css" href="src/vendor/pure/grids-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="tmp/main.css" />
+  <!-- endbuild -->
+
+  <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+
+</head>
+
+<body>
+  <div>
+    <header data-ui-view="header"></header>
+    <div data-ui-view class="l-page island"></div>
+    <footer data-ui-view="footer"></footer>
+  </div>
+
+  <!-- build:js assets/js/vendor.js -->
+  <script type="text/javascript" src="src/vendor/angular/angular.js"></script>
+  <script type="text/javascript" src="src/vendor/angular-ui-router/release/angular-ui-router.js"></script>
+  <script type="text/javascript" src="src/vendor/angular-cookies/angular-cookies.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js assets/js/main.js -->
+  <script type="text/javascript" src="src/app/app.js"></script>
+
+  <script type="text/javascript" src="src/app/about/about.js"></script>
+  <script type="text/javascript" src="src/app/home/home.js"></script>
+  <script type="text/javascript" src="src/app/login/login.module.js"></script>
+  <script type="text/javascript" src="src/app/login/login.controller.js"></script>
+  <script type="text/javascript" src="src/app/signup/signup.module.js"></script>
+  <script type="text/javascript" src="src/app/signup/signup.controller.js"></script>
+  <script type="text/javascript" src="src/app/user-profile/profile.module.js"></script>
+  <script type="text/javascript" src="src/app/user-profile/profile.controller.js"></script>
+
+  <script type="text/javascript" src="src/common/directives/version.js"></script>
+  <script type="text/javascript" src="src/common/directives/login.directive.js"></script>
+  <script type="text/javascript" src="src/common/directives/signup.directive.js"></script>
+  <script type="text/javascript" src="src/common/interceptors/httpInterceptor.js"></script>
+  <script type="text/javascript" src="src/common/services/api.module.js"></script>
+  <script type="text/javascript" src="src/common/services/dataService.js"></script>
+  <script type="text/javascript" src="src/common/services/parseApi.js"></script>
+  <script type="text/javascript" src="src/common/services/userApi.js"></script>
+  <script type="text/javascript" src="src/common/filters/uppercase.js"></script>
+
+  <script type="text/javascript" src="src/common/header.js"></script>
+  <script type="text/javascript" src="src/common/footer.js"></script>
+
+  <script type="text/javascript" src="tmp/templates.js"></script>
+
+  <!-- endbuild -->
+</body>
+
+</html>
