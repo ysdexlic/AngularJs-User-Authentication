@@ -1,17 +1,30 @@
 <div class="pure-g island3">
   <div class="content pure-u-1">
     <p class="island-panel">
-      <strong>Note that this is only a brief guide to show the use of the login authentication, for more detail about the build, configuration or anything else, please refer to the <a href="https://github.com/ysdexlic/AngularJs-Login-Authentication/#readme" target="_blank">documentation</a> on the GitHub project.</strong>
+      <strong>Note that this is only a brief guide to show the use of the user authentication, for more detail about the build, configuration or anything else, please refer to the <a href="https://github.com/ysdexlic/AngularJs-User-Authentication/#readme" target="_blank">documentation</a> on the GitHub project.</strong>
     </p>
 
-    <h3>What and Why</h3>
+    <h3>What is it?</h3>
     <p>
-      <code>AngularJs-Login-Authentication</code> is an example of how to control and authenticate users using a REST API with AngularJS.
+      <strong>AngularJs-Login-Authentication</strong> is an example of how to control and authenticate users using a REST API with AngularJS.
     </p>
 
+    <h3>How does it work?</h3>
+    <p>
+      Upon signing up or logging in, the REST API responds with a session token which is then stored in the browser's cookies folder which can then be used to authenticate whether or not a user is logged in.
+      <br/><br/>
+      Often you will want some pages to only be accessible to logged in users, you can specify these pages in the <a href="https://github.com/angular-ui/ui-router/wiki#resolve" target="_blank">resolve</a> of the config block, using the now stored session token to authenticate the user.
+      <br/><br/>
+      Inside the <a href="https://github.com/ysdexlic/AngularJs-User-Authentication/blob/master/client/src/app/login/login.controller.js" target="_blank">login</a> and <a href="https://github.com/ysdexlic/AngularJs-User-Authentication/blob/master/client/src/app/signup/signup.controller.js" target="_blank">signup</a> controllers, on a successful call, it will initiate a <code>$location.path</code> change to the user's profile.
+      <br/><br/>
+      I left the profile tab on the menu to show that when trying to access the profile page without being logged in you will be unable to access it and redirected to the home page.
+
+    </p>
+
+    <br/>
 
     <p class="text-center">
-      <a href="https://github.com/ysdexlic/AngularJs-Login-Authentication/#readme" target="_blank" class="pure-button button-xlarge pure-button-primary">
+      <a href="https://github.com/ysdexlic/AngularJs-User-Authentication/#readme" target="_blank" class="pure-button button-xlarge pure-button-primary">
         Full documentation on GitHub
       </a>
     </p>

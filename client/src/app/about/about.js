@@ -6,7 +6,7 @@
       'common.services.api'
     ])
     .config(config)
-    .controller('GettingStartedCtrl', GettingStartedCtrl);
+    .controller('aboutCtrl', aboutCtrl);
 
   /**
    * @name  config
@@ -19,33 +19,17 @@
       views: {
         '@': {
           templateUrl: 'src/app/about/about.html',
-          controller: 'GettingStartedCtrl as vm'
+          controller: 'aboutCtrl as vm'
         }
-      }/*,
-      resolve: {
-        auth: authentication
-      }*/
+      }
     });
-  }
-
-  /**
-   * @name  authentication
-   * @description returns promise based on whether user is logged in
-   */
-  function authentication ($q, userApi) {
-
-    if (userApi.currentUser()) {
-      return $q.resolve({ 'authenticated': true });
-    } else {
-      return $q.reject({ 'authenticated': false });
-    }
   }
 
   /**
    * @name  gettingStartedCtrl
    * @description Controller
    */
-  function GettingStartedCtrl($log) {
+  function aboutCtrl($log) {
     var vm = this;
     vm.someMethod = function () {
       $log.debug('I\'m a method');

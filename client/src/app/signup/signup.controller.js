@@ -15,7 +15,7 @@
         .then(function (userProfile) {
           //successful login
           $log.debug('signupCtrl signup success');
-          $location.path('/getting-started');
+          $location.path('/profile');
         },
         function (error) {
           // Login failed, display error message

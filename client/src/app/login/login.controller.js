@@ -22,7 +22,7 @@
         function (userProfile) {
           // Successful login
           $log.debug('loginCtrl login success');
-          $location.path('/getting-started');
+          $location.path('/profile');
 
         },
         function (error) {
@@ -42,6 +42,7 @@
           function (response) {
             //successful logout
             $log.debug('loginCtrl logout success');
+            $location.path('/');
           },
           function (error) {
             // Logout failed, display error message

@@ -5,7 +5,6 @@
   [
     'ngCookies',
     'common.services.api'
-    //'common.services.cookieService'
   ]);
 
 })();

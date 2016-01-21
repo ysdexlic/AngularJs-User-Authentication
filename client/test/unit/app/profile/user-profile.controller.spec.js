@@ -30,7 +30,7 @@
         mockDependencies = mockDependencies || {};
 
         return $controller(
-          'userProfileCtrl as vm',
+          'profileCtrl as vm',
           _.defaults(mockDependencies, dependencies)
         );
       };

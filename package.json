@@ -47,7 +47,7 @@
     "karma-jasmine": "~0.3.5",
     "karma-mocha-reporter": "~1.1.5",
     "karma-osx-reporter": "^0.2.1",
-    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-phantomjs-launcher": "~0.2.3",
     "karma-sinon": "^1.0.4",
     "lodash": "~4.0.0",
     "protractor": "~3.0.0",
