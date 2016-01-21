@@ -40,7 +40,7 @@
 
     $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
       //event.preventDefault();
-      $log.debug(event);
+      //$log.debug(event);
       $log.debug('authenticated user');
     });
 

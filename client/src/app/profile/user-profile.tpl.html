@@ -1,3 +1,28 @@
-<div data-ng-controller="LoginCtrl as vm">
-  <a href data-ng-click="vm.logOut()">logout</a>
+<div class="pure-g island3">
+  <div class="pure-u-1">
+    <p class="text-center">
+      <a href="" class="pure-button button-xlarge pure-button-primary" data-ng-click="vm.getDetails()">
+        Click to see your details
+      </a>
+    </p>
+  </div>
+  <div class="pure-u-1-4 island">
+    <p>username:</p><p style="overflow:auto; color:red;"> {{ vm.username }}</p>
+  </div>
+  <div class="pure-u-1-4 island">
+    <p>email: </p><p style="overflow:auto; color:red;">{{ vm.email }}</p>
+  </div>
+  <div class="pure-u-1-4 island">
+    <p>user ID: </p><p style="overflow:auto; color:red;">{{ vm.id }}</p>
+  </div>
+  <div class="pure-u-1-4 island">
+    <p>session token: </p><p style="overflow:auto; color:red;">{{ vm.session }}</p>
+  </div>
+
+
+  <div class="pure-u-1">
+    <div data-ng-controller="LoginCtrl as vm" class="text-center">
+      <a href data-ng-click="vm.logOut()" class="pure-button  pure-button-primary">logout</a>
+    </div>
+  </div>
 </div>

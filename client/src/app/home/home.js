@@ -27,8 +27,25 @@
             }
           }
         }
+      },
+      resolve: {
+        auth: authentication
       }
     });
+  }
+
+
+  /**
+   * @name  authentication
+   * @description returns promise based on whether user is logged in
+   */
+  function authentication ($q, userApi) {
+
+    if (userApi.currentUser()) {
+      return $q.reject({ 'authenticated': false });
+    } else {
+      return $q.resolve({ 'authenticated': true });
+    }
   }
 
   /**
