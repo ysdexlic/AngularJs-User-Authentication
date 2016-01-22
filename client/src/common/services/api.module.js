@@ -4,8 +4,8 @@
 
   angular.module('common.services.api', ['ngCookies'])
     .constant('PARSE_CREDENTIALS', {
-      APP_ID: 'eor63afSo5K3tMSMrITY76E6IPVcerPATtJhmpNo',
-      REST_API_KEY: '426tpWnUZiO2g4ZoQqww4tuDhJxALhF5UtOVNafe'
+      APP_ID: '', //enter your Parse App Id here
+      REST_API_KEY: '' //enter your Parse Rest Api key here
     })
     .constant('PARSE_URLS', {
       LOGIN: 'https://api.parse.com/1/login',
